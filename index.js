@@ -1,6 +1,7 @@
 const {spawn} = require("node-pty");
+const path = require("path");
 
-const pyProcess = spawn("python", ["./read.py"]);
+const pyProcess = spawn("python", [path.resolve(__dirname, 'read.py')]);
 
 const stream = (onData, onExit) => {
     pyProcess.on("data", data => {
@@ -14,15 +15,5 @@ const stream = (onData, onExit) => {
         onExit(exitCode);
     });
 };
-
-const onData = uid => {
-    console.log(data)
-};
-
-const onExit = exitCode => {
-    console.log('Exit code : ' + exitCode)
-};
-
-stream(onData, onExit);
 
 module.exports = stream;
