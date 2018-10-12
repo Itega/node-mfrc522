@@ -1,0 +1,29 @@
+{
+  "author": {
+    "name": "Julien Zolli",
+    "email": "julien.zolli@viacesi.fr"
+  },
+  "name": "node-mfrc522",
+  "description": "Module to access an rfid reader with rc522 chipset connected to a raspberry pi.",
+  "keywords": [
+    "rfid",
+    "rc522",
+    "raspberry"
+  ],
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itega/node-mfrc522.git"
+  },
+  "main": "./index.js",
+  "dependencies": {
+    "node-pty": "^0.7.8"
+  },
+  "optionalDependencies": {},
+  "gitHead": "",
+  "bugs": {
+    "url": "https://github.com/itega/node-mfrc522/issues"
+  },
+  "homepage": "",
+  "directories": {}
+}
